@@ -2,7 +2,9 @@
 FROM mongo
 
 #Installed for test purposes to ping the other container in same network
-RUN apt update && apt install iproute2 -y
+RUN apt update -y 	&& \
+    apt install iproute2 -y	&& \
+    apt install python -y
 
 #Default Environment Variables
 ENV MONGO_INITDB_ROOT_USERNAME root
