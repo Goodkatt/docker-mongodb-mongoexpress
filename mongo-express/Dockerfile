@@ -1,6 +1,7 @@
+#For mongo-express
 FROM mongo-express
 
-
+#Environment Variables
 ENV ME_CONFIG_MONGODB_PORT 27017
 
 ENV ME_CONFIG_MONGODB_ADMINUSERNAME root
